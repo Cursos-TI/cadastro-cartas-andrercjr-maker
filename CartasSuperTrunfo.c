@@ -4,45 +4,60 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-// Carta 01
-char Estado[2];
-char Código[1];
-char Cidade[2];
-int População;
-float ÁreaKm2;
-float PIB;
-int Númerodepontoturístico;
+// carta 01
+char Estado[50];
+char Código[50];
+char Cidade[50];
+int População1;
+float ÁreaKm11;
+float PIB1;
+int Númerodepontoturístico1;
+float Densidadepopulacional1;
+float PIBpercapita1;
 
+//Carta 01
 printf("Estado:  \n");
-scanf("%s", &Estado);
+scanf("%s", Estado);
 printf("código da carta: \n");
-scanf("%s", &Código);
+scanf("%s", Código);
 printf("Nome da cidade: \n");
-scanf("%s", &Cidade);
+scanf("%s", Cidade);
 printf("População: \n");
-scanf("%d", &População);
+scanf("%d", &População1);
 printf("Área em Km²: \n");
-scanf("%f", &ÁreaKm2);
+scanf("%f", &ÁreaKm11);
 printf("PIB: \n");
-scanf("%f", &PIB);
+scanf("%f", &PIB1);
 printf("Número de ponto turístico: \n");
-scanf("%d", &Númerodepontoturístico);
+scanf("%d", &Númerodepontoturístico1);
+
+Densidadepopulacional1 = (float)População1 / ÁreaKm11;
+    PIBpercapita1 = PIB1 / (float)População1;
+    printf("\nCarta 01:\n");
+    printf("Estado: %s - Código: %s\n", Estado, Código);
+    printf("Cidade: %s - População: %d\n", Cidade, População1);
+    printf("Área: %.2f Km² - PIB: %.2f\n", ÁreaKm11, PIB1);
+    printf("Densidade Populacional: %.2f hab/Km²\n", Densidadepopulacional1);
+    printf("PIB per Capita: %.2f\n", PIBpercapita1);
+
 
 //Carta02
-char Estado2[2];
-char Código2[1];
-char Cidade2[2];
+char Estado2[50];
+char Código2[50];
+char Cidade2[50];
 int População2;
 float ÁreaKm22;
 float PIB2;
 int Númerodepontoturístico2;
+float Densidadepopulacional2;
+float PIBpercapita2;
 
 printf("Estado: \n");
-scanf("%s", &Estado2);
+scanf("%s", Estado2);
 printf("código da carta: \n");
-scanf("%s", &Código2);
+scanf("%s", Código2);
 printf("Nome da cidade: \n");
-scanf("%s", &Cidade2);
+scanf("%s", Cidade2);
 printf("População: \n");
 scanf("%d", &População2);
 printf("Área em Km²: \n");
@@ -52,6 +67,15 @@ scanf("%f", &PIB2);
 printf("Número de ponto turístico: \n");
 scanf("%d", &Númerodepontoturístico2);
 
+Densidadepopulacional2 = (float)População2 / ÁreaKm22;
+    PIBpercapita2 = PIB2 / (float)População2;
+
+    printf("\nCarta 02:\n");
+    printf("Estado: %s - Código: %s\n", Estado2, Código2);
+    printf("Cidade: %s - População: %d\n", Cidade2, População2);
+    printf("Área: %.2f Km² - PIB: %.2f\n", ÁreaKm22, PIB2);
+    printf("Densidade Populacional: %.2f hab/Km²\n", Densidadepopulacional2);
+    printf("PIB per Capita: %.2f\n", PIBpercapita2);
 
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
@@ -60,4 +84,5 @@ scanf("%d", &Númerodepontoturístico2);
   // Área para exibição dos dados da cidade
 
 return 0;
+
 } 
