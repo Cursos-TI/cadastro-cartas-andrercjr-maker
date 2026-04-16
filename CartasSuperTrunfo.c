@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo
 
 int main() {
 // carta 01
