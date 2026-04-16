@@ -99,7 +99,6 @@ SuperPoder2 = (float)População2 + ÁreaKm22 + PIB2 + (float)Númerodepontotur�
     printf("Super Poder: %d\n", SuperPoder1 > SuperPoder2);
     
 
-
 return 0;
 
 } 
